@@ -31,14 +31,38 @@
                         <a href="/" class="header__logo"></a>
                         <span class="btn sidenav_toggle"><i class="fa fa-bars"></i></span>
                     </div>
-                    <div class="col-sm-8 col-md-5 hidden-xs">
+                    <div class="col-sm-8 col-md-3 col-lg-5 hidden-xs">
                         <div class="balance_warning">Иван Петров, Вашего баланса хватит на <span class="balance_day">10</span> дней. <span class="hidden-md hidden-sm">Спасибо, что работаете с нами!</span></div>
                     </div>
-                    <div class="col-md-4 hidden-sm hidden-xs">
+                    <div class="col-md-6 col-lg-4 hidden-sm hidden-xs">
                         <ul class="header__nav">
-                            <li class="nav_item1"><a href="#">поиск по базе</a></li>
-                            <li class="nav_item1"><a href="#">тех. поддержка</a></li>
-                            <li class="nav_item1"><a href="#"><span>Личный кабинет</span><i class="nav_arrow"></i></a></li>
+                            <li class="item1 dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true">поиск по базе</a>
+                                <div class="dropdown-menu header_search">
+                                    <form class="header_search_form" method="get">
+                                        <div class="form-group">
+                                            <input type="text" class="input_search" placeholder="быстрый поиск клиента по телефону или адресу">
+                                            <input type="submit" class="hidden">
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="item2"><a  href="#">тех. поддержка</a></li>
+                            <li class="item3 dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <span>Личный кабинет</span>
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="item1">
+                                        <a href="#">Мой баланс:</a>
+                                        <span class="day_left">15 дней</span>
+                                    </li>
+                                    <li class="item2"><a href="#">Пожелания</a></li>
+                                    <li class="item3"><a href="#">Обратная связь</a></li>
+                                    <li class="item4"><a href="#">Выход из личного кабинета</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -67,7 +91,7 @@
                                     <li>
                                         <div class="panel_title panel_title_clients">КЛИЕНТЫ  <span>(150 человек)</span></div>
                                         <div class="panel_item_top">
-                                            <a class="btn btn_main btn_green">Добавить клиента</a>
+                                            <a class="btn btn_main btn_green"><span class="btn_user_icon">Добавить клиента</span></a>
                                         </div>
                                         <div class="panel_item_bottom">
                                             Перейти ко всему списку <a href="#" class="client_list">КЛИЕНТОВ</a>
@@ -77,7 +101,7 @@
                                     <li>
                                         <div class="panel_title panel_title_object">ОБЪЕКТЫ  <span>(50)  в выгрузке  (15)</span></div>
                                         <div class="panel_item_top">
-                                            <a class="btn btn_main btn_blue">Добавить клиента</a>
+                                            <a class="btn btn_main btn_blue"><span class="btn_house_icon">Добавить объект</span></a>
                                         </div>
                                         <div class="panel_item_bottom">
                                             Перейти ко всему списку <a href="#" class="client_list">КЛИЕНТОВ</a>
@@ -109,7 +133,7 @@
                                     <li>
                                         <div class="panel_title panel_title_clients">КЛИЕНТЫ  <span>(150 человек)</span></div>
                                         <div class="panel_item_top">
-                                            <a class="btn btn_main btn_green">Добавить клиента</a>
+                                            <a class="btn btn_main btn_green"><span class="btn_user_icon">Добавить клиента</span></a>
                                         </div>
                                         <div class="panel_item_bottom">
                                             Перейти ко всему списку <a href="#" class="client_list">КЛИЕНТОВ</a>
@@ -119,7 +143,7 @@
                                     <li>
                                         <div class="panel_title panel_title_object">ОБЪЕКТЫ  <span>(50)  в выгрузке  (15)</span></div>
                                         <div class="panel_item_top">
-                                            <a class="btn btn_main btn_blue">Добавить клиента</a>
+                                            <a class="btn btn_main btn_blue"><span class="btn_house_icon">Добавить объект</span></a>
                                         </div>
                                         <div class="panel_item_bottom">
                                             Перейти ко всему списку <a href="#" class="client_list">КЛИЕНТОВ</a>
@@ -285,73 +309,74 @@
 
         <!-- Navigation-->
         <nav class="sidenav">
-            <ul class="clearfix">
-                <li class="item1">
-                    <a href="#">
-                        <span class="nav_title">Главная страница</span>
-                        <span class="nav_legend">12 модулей</span>
-                        <b class="icon_house"></b>
-                    </a>
-                </li>
-                <li class="item1">
-                    <a href="#">
-                        <span class="nav_title">Добавить сотрудника</span>
-                        <span class="nav_legend">работа с пользователями</span>
-                        <b class="icon_user"></b>
-                    </a>
-                </li>
-                <li class="item1">
-                    <a href="#">
-                        <span class="nav_title">Квартиры <i class="fa fa-angle-down"></i></span>
-                        <span class="nav_legend">320 квартир в базе всего</span>
-                        <b class="icon_house"></b>
-                    </a>
-                    <ul class="sub_menu">
-                        <li class="item1">
-                            <a href="#">
-                                <span class="nav_title">Аренда квартир</span>
-                                <span class="nav_legend">116 квартир в базе</span>
-                                <b class="icon_house"></b>
-                            </a>
-                        </li>
-                        <li class="item1">
-                            <a href="#">
-                                <span class="nav_title">Продажа квартир</span>
-                                <span class="nav_legend">204 квартиры в базе</span>
-                                <b class="icon_house"></b>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="item1">
-                    <a href="#">
-                        <span class="nav_title">Коммерческая</span>
-                        <span class="nav_legend">коммерческая часть</span>
-                        <b class="icon_dollar"></b>
-                    </a>
-                </li>
-                <li class="item1">
-                    <a href="#">
-                        <span class="nav_title">Пожелания</span>
-                        <span class="nav_legend">по улучшению сервиса</span>
-                        <b class="icon_post"></b>
-                    </a>
-                </li>
-                <li class="item1">
-                    <a href="#">
-                        <span class="nav_title">Обратная связь</span>
-                        <span class="nav_legend">оставить сообщение</span>
-                        <b class="icon_post"></b>
-                    </a>
-                </li>
-            </ul>
+            <div class="sidenav_inner">
+                <ul class="clearfix">
+                    <li class="item1">
+                        <a href="#">
+                            <span class="nav_title">Главная страница</span>
+                            <span class="nav_legend">12 модулей</span>
+                            <b class="icon_house"></b>
+                        </a>
+                    </li>
+                    <li class="item1">
+                        <a href="#">
+                            <span class="nav_title">Добавить сотрудника</span>
+                            <span class="nav_legend">работа с пользователями</span>
+                            <b class="icon_user"></b>
+                        </a>
+                    </li>
+                    <li class="item1">
+                        <a href="#">
+                            <span class="nav_title">Квартиры <i class="fa fa-angle-down"></i></span>
+                            <span class="nav_legend">320 квартир в базе всего</span>
+                            <b class="icon_house"></b>
+                        </a>
+                        <ul class="sub_menu">
+                            <li class="item1">
+                                <a href="#">
+                                    <span class="nav_title">Аренда квартир</span>
+                                    <span class="nav_legend">116 квартир в базе</span>
+                                    <b class="icon_house"></b>
+                                </a>
+                            </li>
+                            <li class="item1">
+                                <a href="#">
+                                    <span class="nav_title">Продажа квартир</span>
+                                    <span class="nav_legend">204 квартиры в базе</span>
+                                    <b class="icon_house"></b>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item1">
+                        <a href="#">
+                            <span class="nav_title">Коммерческая</span>
+                            <span class="nav_legend">коммерческая часть</span>
+                            <b class="icon_dollar"></b>
+                        </a>
+                    </li>
+                    <li class="item1">
+                        <a href="#">
+                            <span class="nav_title">Пожелания</span>
+                            <span class="nav_legend">по улучшению сервиса</span>
+                            <b class="icon_post"></b>
+                        </a>
+                    </li>
+                    <li class="item1">
+                        <a href="#">
+                            <span class="nav_title">Обратная связь</span>
+                            <span class="nav_legend">оставить сообщение</span>
+                            <b class="icon_post"></b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

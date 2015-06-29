@@ -80,14 +80,10 @@ $('input[type="checkbox"]').click(function() {
     var check = rows.find('span.check i');
     var checkbox = ($(this).is(':checked'));
 
-    console.log(checkbox);
-
     if (checkbox) {
         check.addClass('text-success');
-        console.log('зеленый');
     }
     else{
         check.removeClass('text-success');
-        console.log('серый');
     }
 });

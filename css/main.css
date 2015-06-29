@@ -87,7 +87,7 @@ body {
 .header .sidenav_toggle {
   top: 12px;
   left: 15px;
-  color: #282828;
+  color: #cccccc;
   padding: 4px 12px;
   position: absolute;
   background: #3e3d3d;
@@ -124,6 +124,9 @@ body {
   display: inline-block;
   padding: 10px 10px 10px 35px;
 }
+.header__nav > li > a:hover span {
+  border-bottom: 1px dashed #fff;
+}
 .header__nav > li.item1 .dropdown-menu {
   right: -175px;
 }
@@ -144,6 +147,15 @@ body {
 }
 .header__nav > li i {
   margin-left: 10px;
+}
+.header__nav > li i.fa-chevron-up {
+  display: none;
+}
+.header__nav > li.open i.fa-chevron-down {
+  display: none;
+}
+.header__nav > li.open i.fa-chevron-up {
+  display: inline-block;
 }
 .header__nav a {
   color: #fff;
@@ -172,9 +184,12 @@ body {
   border-bottom: 1px solid transparent;
 }
 .header__nav .dropdown-menu > li:first-child {
+  padding: 9px 5px;
   border-bottom-color: #606060;
 }
 .header__nav .dropdown-menu > li:last-child {
+  padding: 9px 5px;
+  margin-top: 3px;
   border-top-color: #606060;
 }
 .header__nav .dropdown-menu > li > a {
@@ -463,6 +478,15 @@ body {
   background: #3e3d3d;
   text-decoration: none;
 }
+.sidenav a .fa-angle-up {
+  display: none;
+}
+.sidenav a.active .fa-angle-down {
+  display: none;
+}
+.sidenav a.active .fa-angle-up {
+  display: inline-block;
+}
 .sidenav .nav_title {
   display: block;
   font-weight: 400;
@@ -471,6 +495,7 @@ body {
   margin-left: 10px;
 }
 .sidenav .nav_legend {
+  color: #969696;
   font-size: 13px;
   display: block;
   font-weight: 300;

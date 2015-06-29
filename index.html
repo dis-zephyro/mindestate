@@ -37,21 +37,22 @@
                     <div class="col-md-6 col-lg-4 hidden-sm hidden-xs">
                         <ul class="header__nav">
                             <li class="item1 dropdown">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true">поиск по базе</a>
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true"><span>поиск по базе</span></a>
                                 <div class="dropdown-menu header_search">
                                     <form class="header_search_form" method="get">
                                         <div class="form-group">
-                                            <input type="text" class="input_search" placeholder="быстрый поиск клиента по телефону или адресу">
+                                            <input type="text" class="input_search" value="быстрый поиск клиента по телефону или адресу" onfocus="if (this.value=='быстрый поиск клиента по телефону или адресу') this.value='';">
                                             <input type="submit" class="hidden">
                                         </div>
                                     </form>
                                 </div>
                             </li>
-                            <li class="item2"><a  href="#">тех. поддержка</a></li>
+                            <li class="item2"><a  href="#"><span>тех. поддержка</span></a></li>
                             <li class="item3 dropdown">
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">
                                     <span>Личный кабинет</span>
                                     <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-chevron-up"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="item1">
@@ -186,8 +187,6 @@
                                                 <div class="created_date"><i class="fa fa-clock-o"></i>создано: 14.08.2015</div>
                                             </td>
                                             <td>
-                                            </td>
-                                            <td>
                                                 <span class="check"><i class="fa fa-check text-success"></i></span>
                                             </td>
                                         </tr>
@@ -202,8 +201,6 @@
                                                 <div class="created_date"><i class="fa fa-clock-o"></i>создано: 14.08.2015</div>
                                             </td>
                                             <td>
-                                            </td>
-                                            <td>
                                                 <span class="check"><i class="fa fa-check"></i></span>
                                             </td>
                                         </tr>
@@ -216,8 +213,6 @@
                                             <td>
                                                 Позвонить Ивану Петрову по сделке
                                                 <div class="created_date"><i class="fa fa-clock-o"></i>создано: 14.08.2015</div>
-                                            </td>
-                                            <td>
                                             </td>
                                             <td>
                                                 <span class="check"><i class="fa fa-check"></i></span>
@@ -327,7 +322,7 @@
                     </li>
                     <li class="item1">
                         <a href="#">
-                            <span class="nav_title">Квартиры <i class="fa fa-angle-down"></i></span>
+                            <span class="nav_title">Квартиры <i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></span>
                             <span class="nav_legend">320 квартир в базе всего</span>
                             <b class="icon_house"></b>
                         </a>

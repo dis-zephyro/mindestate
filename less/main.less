@@ -69,7 +69,7 @@ body {
 	.sidenav_toggle {
 		top: 12px;
 		left: 15px;
-		color: #282828;
+		color: #cccccc;
 		padding: 4px 12px;
 		position: absolute;
 		background: #3e3d3d;
@@ -110,6 +110,10 @@ body {
 			text-decoration: none;
 			display: inline-block;
 			padding: 10px 10px 10px 35px;
+
+			&:hover span {
+				border-bottom: 1px dashed #fff;
+			}
 		}
 
 		&.item1 {
@@ -141,6 +145,23 @@ body {
 
 		i {
 			margin-left: 10px;
+
+			&.fa-chevron-up {
+				display: none;
+			}
+		}
+
+		&.open {
+
+			i {
+				&.fa-chevron-down {
+					display: none;
+				}
+
+				&.fa-chevron-up {
+					display: inline-block;
+				}
+			}
 		}
 	}
 
@@ -170,10 +191,13 @@ body {
 			border-bottom: 1px solid transparent;
 
 			&:first-child {
+				padding: 9px 5px;
 				border-bottom-color: #606060;
 			}
 
 			&:last-child {
+				padding: 9px 5px;
+				margin-top: 3px;
 				border-top-color: #606060;
 			}
 
@@ -527,6 +551,21 @@ body {
 			background: #3e3d3d;
 			text-decoration: none;
 		}
+
+		.fa-angle-up {
+			display: none;
+		}
+
+		&.active {
+
+			.fa-angle-down {
+				display: none;
+			}
+
+			.fa-angle-up {
+				display: inline-block;
+			}
+		}
 	}
 
 	.nav_title {
@@ -539,6 +578,7 @@ body {
 	}
 
 	.nav_legend {
+		color: #969696;
 		font-size: 13px;
 		display: block;
 		font-weight: 300;

@@ -40,16 +40,11 @@ $(function() {
 
     $(pull).on('click', function(e) {
         e.preventDefault();
-        menu.slideToggle();
+        menu.toggleClass("sidenav_show");
     });
 
-    $(window).resize(function(){
-        var w = $(window).width();
-        if(w > 767 && menu.is(':hidden')) {
-            menu.removeAttr('style');
-        }
-    });
 });
+
 
 
 // Collapse panel_main

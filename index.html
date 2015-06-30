@@ -25,47 +25,46 @@
     
     <body>
         <header class="header">
-            <div class="container_main">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-3">
-                        <a href="/" class="header__logo"></a>
-                        <span class="btn sidenav_toggle"><i class="fa fa-bars"></i></span>
-                    </div>
-                    <div class="col-sm-8 col-md-3 col-lg-5 hidden-xs">
-                        <div class="balance_warning">Иван Петров, Вашего баланса хватит на <span class="balance_day">10</span> дней. <span class="hidden-md hidden-sm">Спасибо, что работаете с нами!</span></div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 hidden-sm hidden-xs">
-                        <ul class="header__nav">
-                            <li class="item1 dropdown">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true"><span>поиск по базе</span></a>
-                                <div class="dropdown-menu header_search">
-                                    <form class="header_search_form" method="get">
-                                        <div class="form-group">
-                                            <input type="text" class="input_search" value="быстрый поиск клиента по телефону или адресу" onfocus="if (this.value=='быстрый поиск клиента по телефону или адресу') this.value='';">
-                                            <input type="submit" class="hidden">
-                                        </div>
-                                    </form>
-                                </div>
-                            </li>
-                            <li class="item2"><a  href="#"><span>тех. поддержка</span></a></li>
-                            <li class="item3 dropdown">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                                    <span>Личный кабинет</span>
-                                    <i class="fa fa-chevron-down"></i>
-                                    <i class="fa fa-chevron-up"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="item1">
-                                        <a href="#">Мой баланс:</a>
-                                        <span class="day_left">15 дней</span>
-                                    </li>
-                                    <li class="item2"><a href="#">Пожелания</a></li>
-                                    <li class="item3"><a href="#">Обратная связь</a></li>
-                                    <li class="item4"><a href="#">Выход из личного кабинета</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="container_main clearfix">
+                <div class="navbar-header">
+                    <span class="btn header_nav_toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></span>
+                    <span class="btn sidenav_toggle"><i class="fa fa-bars"></i></span>
+                    <a class="header__logo" href="#"></a>
+                    <span class="balance_warning hidden-sm hidden-xs">Иван Петров, Вашего баланса хватит на <span class="balance_day">10</span> дней. <span class="hidden-md hidden-sm">Спасибо, что работаете с нами!</span></span>
+                </div>
+
+                <div class="navbar-collapse collapse pull-right" style="height: 1px;">
+                    <ul class="nav navbar-nav header_nav">
+                        <li class="item1">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true"><span>поиск по базе</span></a>
+                            <div class="dropdown-menu header_search">
+                                <form class="header_search_form" method="get">
+                                    <div class="form-group">
+                                        <input type="text" class="input_search" value="быстрый поиск клиента по телефону или адресу" onfocus="if (this.value=='быстрый поиск клиента по телефону или адресу') this.value='';">
+                                        <input type="submit" class="hidden">
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="item2"><a href="#"><span>тех. поддержка</span></a></li>
+                        <li class="item3">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                <span>Личный кабинет</span>
+                                <i class="fa fa-chevron-down"></i>
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li class="item1">
+                                    <a href="#">Мой баланс:</a>
+                                    <span class="day_left">15 дней</span>
+                                </li>
+                                <li class="item2"><a href="#">Пожелания</a></li>
+                                <li class="item3"><a href="#">Обратная связь</a></li>
+                                <li class="item4"><a href="#">Выход из личного кабинета</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
